@@ -1,8 +1,8 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "Warren Buffett’s Seven Rules: An Economic Masterclass in Value Investing"
+title: " 你身边的美妆专家"
 author: 
-  name: " 你身边的美妆专家"
+  name: "微微"
   url: "/social.JPG"
 image:
   url: "/social.JPG"
