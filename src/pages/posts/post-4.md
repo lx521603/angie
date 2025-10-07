@@ -3,11 +3,11 @@ layout: ../../components/MarkdownPost.astro
 title: "每天都的复盘，结账，回答代理问题也很重要"
 author: 
   name: "微微"
-  url: "/vv5.jpeg
+  url: "/vv5.jpeg"
 image:
   url: "/vv5.jpeg"
   alt: "xx"
-tags: [""]
+tags: ["日常"]
 pubDate: 'Mar 17, 2025'
 likes: '9.3k'
 comments: '183'
