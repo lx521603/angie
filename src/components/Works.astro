@@ -1,52 +1,77 @@
 ---
 import Bars from "./Bars.astro"
-
 import svgUnderline from '../assets/underline.svg'
 import arrowCard from '../assets/arrow-card.svg'
 
 const portfolio = [
   { 
-    name: '直播中的薇薇', desc: `每天直播 1-2 场，线下、线上指导直播带货`,
+    name: '直播中的薇薇', 
+    desc: `每天直播 1-2 场，线下、线上指导直播带货`,
     cover: `/vv1.jpg`,
-    background-position: top
+    coverStyle: 'object-position: top',
+    aspect: 'aspect-[3/4]'  // ✅ 竖图比例
   },
   { 
-    name: '直播中的薇薇', desc: ` 每天直播 1-2 场，线下、线上指导直播带货`,
-    cover: `https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: '直播花絮', 
+    desc: `专业直播设备与场景搭建`,
+    cover: `https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+    aspect: 'aspect-[3/4]'
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: '产品展示', 
+    desc: `美妆产品详细讲解与试用`,
+    cover: `https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+    aspect: 'aspect-[3/4]'
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: '粉丝互动', 
+    desc: `直播间实时互动与答疑`,
+    cover: `https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+    aspect: 'aspect-[3/4]'
   },
 ]
 ---
 
-
 <section class="py-25 space-y-10 px-5" id="work">
     <div class="max-w-md mx-auto relative ">
-      <h1 class="text-4xl font-medium text-center">My Portfolio</h1>
-      <img src={svgUnderline.src} alt="arrow" width="140" class="absolute left-50 -bottom-1" />
+      <h1 class="text-4xl font-medium text-center">直播作品集</h1>
+      <img src={svgUnderline.src} alt="箭头" width="140" class="absolute left-50 -bottom-1" />
     </div>
   
-    <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10"> 
-      {portfolio.map(item => ( 
-        <a href="#" class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]">
-          <div class="w-full h-[200px] overflow-hidden border-2">
-           <img src={item.cover} alt="" class="w-full h-full object-cover" />
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"> 
+      {portfolio.map((item, index) => ( 
+        <a href="#" class="flex flex-col bg-white p-4 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)] rounded-lg border border-gray-100">
+          <!-- 竖图容器 -->
+          <div class={`w-full ${item.aspect} overflow-hidden rounded-lg border border-gray-200 mb-4`}>
+           <img 
+             src={item.cover} 
+             alt={item.name}
+             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+             style={item.coverStyle || 'object-position: center'}
+           />
           </div>
-          <div class="space-y-1 pt-4">
-            <div class="flex pr-2">
-              <h2 class="text-xl font-medium flex-1">{item.name}</h2>
-              <img src={arrowCard.src} alt="arrow" width="25" />
+          
+          <!-- 内容区域 -->
+          <div class="space-y-2 flex-1">
+            <div class="flex items-start justify-between">
+              <h2 class="text-lg font-semibold text-gray-800 flex-1 pr-2">{item.name}</h2>
+              <img src={arrowCard.src} alt="箭头" width="20" class="mt-1 flex-shrink-0" />
             </div>
-            <p class="mr-20">{item.desc}</p>
+            <p class="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
           </div>
+          
           <Bars />
         </a>
+      ))}
+    </div>
+</section>
+
+<style>
+  /* 确保图片容器适应竖图比例 */
+  .aspect-\[3\/4\] {
+    aspect-ratio: 3/4;
+  }
+</style>
       ))}
     </div>
 </section>
