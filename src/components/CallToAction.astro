@@ -2,22 +2,56 @@
 import svgPinkStar from '../assets/pink-star.svg'
 import Button from './Button.astro'
 import { buy } from '../sample'
-
 ---
 
-
 <section class="px-3" id="hire">
-    <div class="max-w-3xl mx-auto bg-white text-center flex flex-col gap-4 border-3 shadow-[8px_8px_0px_rgba(0,0,0,0.3)]  relative p-10">
-     <h1 class="text-3xl">想创业，没门路，没人教？线下教学. 给我</h1>
-     <p class="text-lg max-w-lg mx-auto">抖音号: VMimi33453
-微信号: zmmz9108
-邮箱: x@glee.ch
-地址: 芒市新玩厂落日集市，欢迎到店试用
+    <div class="max-w-3xl mx-auto bg-white text-center flex flex-col gap-6 border-3 shadow-[8px_8px_0px_rgba(0,0,0,0.3)] relative p-10 rounded-lg">
+     
+     <h1 class="text-3xl font-bold text-gray-900 mb-2">想创业，没门路，没人教？</h1>
+     <p class="text-xl text-gray-700 mb-6">线下教学 · 全程指导</p>
+     
+     <div class="text-left space-y-6 max-w-md mx-auto">
+       <!-- 联系信息卡片 -->
+       <div class="space-y-4">
+         <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+           <span class="font-semibold text-gray-800 min-w-16">抖音号:</span>
+           <span class="text-gray-700">VMimi33453</span>
+         </div>
+         
+         <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+           <span class="font-semibold text-gray-800 min-w-16">微信号:</span>
+           <span class="text-gray-700">zmmz9108</span>
+         </div>
+         
+         <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+           <span class="font-semibold text-gray-800 min-w-16">邮箱:</span>
+           <span class="text-gray-700">x@glee.ch</span>
+         </div>
+       </div>
 
-常驻保山、芒市，不定期会在瑞丽、腾冲等地出现，欢迎联系👏</p>
-     <div class="flex justify-center">
+       <!-- 地址信息 -->
+       <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+         <h3 class="font-semibold text-blue-900 mb-2">📍 实体店地址</h3>
+         <p class="text-blue-800 text-sm leading-relaxed">
+           芒市新玩厂落日集市，欢迎到店试用
+         </p>
+       </div>
+
+       <!-- 活动范围 -->
+       <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+         <h3 class="font-semibold text-green-900 mb-2">🚗 活动范围</h3>
+         <p class="text-green-800 text-sm leading-relaxed">
+           常驻保山、芒市，不定期会在瑞丽、腾冲等地出现<br>
+           <span class="font-medium">欢迎联系咨询 👏</span>
+         </p>
+       </div>
+     </div>
+
+     <!-- CTA 按钮 -->
+     <div class="flex justify-center mt-6">
        <Button text={buy.title} link={buy.link} target="_blank" />
      </div>
-     <img src={svgPinkStar.src} alt="svg" width="80" class="absolute -top-10 right-20" />
+     
+     <img src={svgPinkStar.src} alt="装饰星星" width="80" class="absolute -top-10 right-20" />
     </div>
-  </section>
+</section>
