@@ -1,11 +1,11 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "The Financial Alchemy of Fiat Currency: A Historical Reflection on the Modern Economy"
+title: "开工前的准备"
 author: 
-  name: "Laura Ville"
-  url: "https://images.pexels.com/photos/30890403/pexels-photo-30890403/free-photo-of-young-woman-squeezing-orange-juice-on-face.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  name: "微微"
+  url: "/vv4.jpeg"
 image:
-  url: "https://images.pexels.com/photos/9304917/pexels-photo-9304917.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+  url: "/vv4 jpeg"
   alt: "xx"
 tags: [""]
 pubDate: 'Mar 17, 2025'
@@ -14,13 +14,6 @@ comments: '99'
 ---
 
 
-Look around at social media, politics, or the news and you’re likely to agree with the bodybuilding champ-turned-movie star-turned-governor of California.
+每次开工前，我都有一套“仪式感流程”：先检查美妆产品是不是齐全，摆摊道具是不是完备，直播设备是不是调好音、调好光……整个过程比开工本身还花时间！但心里明白，这一切的准备，就是为了今天的努力能漂亮、顺利、赚得开心。
 
-
-
-Whether he was lifting weights for five hours a day or trying to hack a path through the thicket of California politics, Schwarzenegger claims he was consistently happy. What allowed him to maintain a positive outlook despite personal setbacks and tough jobs? In his book Be Useful, Schwarzenegger boils down his philosophy to just four words.
-
-
-You might think a simple mantra is too flimsy a thing to be actually meaningful in the face of real-life struggle. But according to top psychologists, the Governator actually manages to capture profound truths about human flourishing in one quick motto.
-
-
+我可以帮你再写 **2
