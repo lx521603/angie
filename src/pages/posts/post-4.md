@@ -1,4 +1,4 @@
-o---
+---
 layout: ../../components/MarkdownPost.astro
 title: "每天都的复盘，结账，回答代理问题也很重要"
 author: 
