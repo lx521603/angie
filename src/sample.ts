@@ -1,16 +1,16 @@
 const author = {
     name: `薇薇`,
-    nickname: `vv`,
-    tiktok: `https://www.tiktok.com/@codetonero`,
+    nickname: `薇薇,
+    tiktok: `https://www.douyin.com/@VMimi33453`,
     ig: `https://www.instagram.com/codetonero/`,
     x: `https://x.com/codetonero`,
-    email: 'mailto:anthonylannn@gmail.com'
+    email: 'mailto:x@glee.ch'
 
 }
 
 
 const buy = {
-    title: `See on Github`,
+    title: `点我代理产品`,
     link: `https://github.com/anthonylan/angie`
 }
 
