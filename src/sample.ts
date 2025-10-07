@@ -1,6 +1,6 @@
 const author = {
     name: `薇薇`,
-    nickname: `薇薇,
+    nickname: `薇薇',
     tiktok: `https://www.tiktok.com/@VMimi33453`,
     ig: `https://www.instagram.com/codetonero/`,
     x: `https://x.com/codetonero`,
