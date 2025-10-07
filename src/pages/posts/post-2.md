@@ -3,9 +3,9 @@ layout: ../../components/MarkdownPost.astro
 title: "受够了当月光族？看腻了老板脸色？"
 author: 
   name: " 薇薇"
-  url: "https://images.pexels.com/photos/28368876/pexels-photo-28368876/free-photo-of-a-man-in-black-sitting-on-a-red-couch.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  url: "/dx.jpeg"
 image:
-  url: "https://images.pexels.com/photos/7693240/pexels-photo-7693240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  url: "/dx.jpeg"
   alt: "xx"
 tags: [""]
 pubDate: 'Oct 15, 2025'
